@@ -10,5 +10,7 @@ bricks:
   readme:
     path: ./bricks/readme
   project_templete:
-    path: ./bricks/project_templete
+    path: ./bricks/project_templete 
+  assets:
+    path: ./bricks/assets
   
