@@ -13,4 +13,6 @@ bricks:
     path: ./bricks/project_templete 
   assets:
     path: ./bricks/assets
+  feature:
+    path: ./bricks/feature
   
