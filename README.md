@@ -36,7 +36,7 @@ bricks:
     project_template:
       git:
         url: https://github.com/YoussefAbdelmonem/mason-template.git
-        path: bricks/project_templete
+        path: bricks/project_template
     feature:
       git:
         url: https://github.com/YoussefAbdelmonem/mason-templete
