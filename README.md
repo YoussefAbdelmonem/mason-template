@@ -27,11 +27,11 @@ add bricks to mason.yaml file so you can access the files that I have share on G
 bricks:
     readme:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        url: https://github.com/YoussefAbdelmonem/mason-template.git
         path: bricks/readme
     assets:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        url: https://github.com/YoussefAbdelmonem/mason-template.git
         path: bricks/assets
     project_template:
       git:
@@ -39,7 +39,7 @@ bricks:
         path: bricks/project_template
     feature:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-templete
+        url: https://github.com/YoussefAbdelmonem/mason-template
         path: bricks/feature
 
 ```
