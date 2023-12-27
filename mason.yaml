@@ -9,8 +9,8 @@ bricks:
   # Uncomment the following lines to import the "widget" brick from git.
   readme:
     path: ./bricks/readme
-  project_templete:
-    path: ./bricks/project_templete 
+  project_template:
+    path: ./bricks/project_template 
   assets:
     path: ./bricks/assets
   feature:
