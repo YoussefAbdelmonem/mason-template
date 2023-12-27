@@ -36,7 +36,7 @@ class _{{featureName.pascalCase()}}ScreenState extends State<{{featureName.pasca
         },
         builder: (context, state) {
           final cubit = {{featureName.pascalCase()}}Cubit.get(context);
-          return child:Scaffold(
+          return Scaffold(
             body: SafeArea(
               child: Column(
                 children: [
