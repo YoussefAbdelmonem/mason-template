@@ -1,4 +1,48 @@
-Short description or introduction of your project.
+## Introduction
+the easiest way you can add a template for your project
+you can customize the template as you wish 
+
+## Getting Started
+
+1. Install Mason
+
+```shell
+dart pub global activate mason_cli
+
+```
+
+2. Add mason to your project
+
+```shell
+mkdir mason
+cd mason
+mason init
+```
+## generate file that contains assets variables and widgets and feature: 
+
+add bricks to mason.yaml file so you can access the files that I have share on Github
+
+
+```shell
+bricks:
+    readme:
+      git:
+        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        path: bricks/readme
+    assets:
+      git:
+        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        path: bricks/assets
+    project_templete:
+      git:
+        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        path: bricks/project_templete
+    feature:
+      git:
+        url: https://github.com/YoussefAbdelmonem/mason-templete
+        path: bricks/feature
+
+```
 
 ## Dependencies
 
@@ -24,21 +68,22 @@ dependencies:
   responsive_framework: ^1.1.0
   bot_toast: ^4.0.3
 ```
+### generate assets folder:
+```shell
+mason make assets -o ../
+```
 
 ## generate project template:
 ```shell
-mason make project_template -o .././lib
+mason make project_templete -o .././lib
 ```
 
-## add new feature
-- run this command and then enter feature name 
+## add new feature with the name you give:
 ```shell
 mason make feature -o .././lib/features
 ```
 
-### generate assets folder
-```shell
-mason make assets -o ../assets
+
 ```
 ## Add assets paths in pubspec.yaml file
 ```yaml
@@ -51,13 +96,14 @@ mason make assets -o ../assets
 
 ```
 
-## generate file that contains assets variables and widgets and injectable: 
+## generate file that contains assets variables and fonts and json: 
 
 1. activate flutter gen 
 
 ```shell
 dart pub global activate flutter_gen
 ```
+
 
 2. add these dependencies to dev_dependencies  
 
@@ -72,7 +118,7 @@ dev_dependencies:
 
 ```yaml
 flutter_gen:
-  output: lib/core/resources/gen/
+  output: lib/core/resources/
   line_length: 80 
 
   # Optional
@@ -83,15 +129,13 @@ flutter_gen:
     lottie: true
 ```
 
-4. auto generate files like (injection.config.dart - assets.gen.dart)
+generate assets folder:
 
-```shell
 dart run build_runner build
-```
 
-## generate file that contains localization keys:
+mason make assets -o ../
 
-```shell
-flutter pub run easy_localization:generate -S "assets/lang" -O "lib/core/resources/gen" -o "locale_keys.g.dart" -f keys
-```
+mason make project_templete -o .././lib
+
+mason make feature -o .././lib/features
 
