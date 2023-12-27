@@ -33,9 +33,9 @@ bricks:
       git:
         url: https://github.com/YoussefAbdelmonem/mason-templete.git
         path: bricks/assets
-    project_templete:
+    project_template:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        url: https://github.com/YoussefAbdelmonem/mason-template.git
         path: bricks/project_templete
     feature:
       git:
@@ -74,7 +74,7 @@ mason make assets -o ../
 
 ## generate project template:
 ```shell
-mason make project_templete -o .././lib
+mason make project_template -o .././lib
 ```
 
 ## add new feature with the name you give:
