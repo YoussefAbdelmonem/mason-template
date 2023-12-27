@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../core/data_source/dio_helper.dart';
-import '../../core/utiles/Locator.dart';
+import '../../../core/data_source/dio_helper.dart';
+import '../../../core/utiles/Locator.dart';
 import '../domain/repository/repository.dart';
 import 'states.dart';
 

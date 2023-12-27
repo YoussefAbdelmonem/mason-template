@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 class Routes {
   static const String SplashScreen = "/";
   static const String AuthScreen = "/authScreen";
@@ -12,12 +11,12 @@ class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings routeSettings) {
     currentRoute = routeSettings.name.toString();
     switch (routeSettings.name) {
-      case Routes.SplashScreen:
-        // return CupertinoPageRoute(
-        //     settings: routeSettings,
-        //     builder: (_) {
-        //       return const SplashScreen();
-        //     });
+      // case Routes.SplashScreen:
+      //   return CupertinoPageRoute(
+      //       settings: routeSettings,
+      //       builder: (_) {
+      //         return const SplashScreen();
+      //       });
   
       default:
         return unDefinedRoute();
@@ -27,7 +26,7 @@ class RouteGenerator {
   static Route<dynamic> getNestedRoute(RouteSettings routeSettings) {
     currentRoute = routeSettings.name.toString();
     switch (routeSettings.name) {
-   
+
      
 
       default:
