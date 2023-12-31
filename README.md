@@ -14,9 +14,7 @@ dart pub global activate mason_cli
 2. Add mason to your project
 
 ```shell
-mkdir mason
-cd mason
-mason init
+mkdir mason && cd mason && mason init
 ```
 ## generate file that contains assets variables and widgets and feature: 
 
