@@ -159,7 +159,7 @@ class DioService {
         await Utils.dataManager.deleteUserData();
         Navigator.of(Utils.navigatorKey().currentContext!)
             .pushNamedAndRemoveUntil(
-          Routes.AuthScreen,
+          Routes.LoginScreen,
           (route) => false,
         );
       }
@@ -167,7 +167,7 @@ class DioService {
         await Utils.dataManager.deleteUserData();
         Navigator.of(Utils.navigatorKey().currentContext!)
             .pushNamedAndRemoveUntil(
-          Routes.AuthScreen,
+          Routes.LayoutScreen,
           (route) => false,
         );
         // Utils.navKey.currentState!.pushNamedAndRemoveUntil(

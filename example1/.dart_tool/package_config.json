@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animate_do",
+      "rootUri": "file:///Users/neopplanet/.puro/shared/pub_cache/hosted/pub.dev/animate_do-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
       "name": "animated_widgets_flutter",
       "rootUri": "file:///Users/neopplanet/.puro/shared/pub_cache/hosted/pub.dev/animated_widgets_flutter-1.1.1+2",
       "packageUri": "lib/",
@@ -578,7 +584,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-12-31T12:22:13.535162Z",
+  "generated": "2023-12-31T14:39:16.876748Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

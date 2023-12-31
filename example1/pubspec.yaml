@@ -36,6 +36,7 @@ dependencies:
   responsive_framework: ^1.1.0
   bot_toast: ^4.0.3
   pinput:
+  animate_do:
   # url_launcher: ^6.1.11
  
   

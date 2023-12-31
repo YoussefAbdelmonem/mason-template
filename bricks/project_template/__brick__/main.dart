@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
       },
       onGenerateRoute: RouteGenerator.getRoute,
       theme: ThemesManger.appTheme,
-      initialRoute: Routes.SplashScreen,
+      initialRoute: Routes.splashScreen,
 
     );
   }
