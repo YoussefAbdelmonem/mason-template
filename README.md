@@ -52,6 +52,7 @@ mason get
 Below is a list of default dependencies used in this project:
 ```yaml
 dependencies:
+ cupertino_icons: ^1.0.2
   dio: ^5.2.0
   cached_network_image: ^3.2.3
   shimmer: ^3.0.0
@@ -70,6 +71,8 @@ dependencies:
   flutter_smart_dialog: ^4.8.2
   responsive_framework: ^1.1.0
   bot_toast: ^4.0.3
+  pinput:
+  animate_do:
 ```
 ### generate assets folder:
 ```shell
