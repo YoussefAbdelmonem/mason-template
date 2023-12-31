@@ -41,9 +41,16 @@ bricks:
       git:
         url: https://github.com/YoussefAbdelmonem/mason-templete
         path: bricks/feature
+    auth:
+      git:
+        url: https://github.com/YoussefAbdelmonem/mason-templete
+        path: bricks/auth
 
 ```
-
+## to get the dependecy that you applied
+```shell
+mason get
+```
 ## Dependencies
 
 Below is a list of default dependencies used in this project:
@@ -67,11 +74,14 @@ dependencies:
   flutter_smart_dialog: ^4.8.2
   responsive_framework: ^1.1.0
   bot_toast: ^4.0.3
+  pinput:
+  animate_do:
 ```
 ### generate assets folder:
 ```shell
 mason make assets -o ../
 ```
+
 
 ## generate project template:
 ```shell
@@ -82,7 +92,10 @@ mason make project_templete -o .././lib
 ```shell
 mason make feature -o .././lib/features
 ```
-
+## add the default authentications and splash:
+```shell
+mason make auth -o .././lib/features
+```
 
 ```
 ## Add assets paths in pubspec.yaml file
@@ -136,6 +149,8 @@ dart run build_runner build
 mason make assets -o ../
 
 mason make project_templete -o .././lib
+
+mason make auth -o .././lib/features
 
 mason make feature -o .././lib/features
 

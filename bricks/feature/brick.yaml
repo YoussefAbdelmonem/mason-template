@@ -29,5 +29,5 @@ vars:
   featureName:
     type: string
     description: feature folder name
-    default: auth
+    default: home
     prompt: what is the feature name?
