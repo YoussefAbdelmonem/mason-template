@@ -97,8 +97,9 @@ mason make feature -o .././lib/features
 mason make auth -o .././lib/features
 ```
 
-```
+
 ## Add assets paths in pubspec.yaml file
+
 ```yaml
   assets:
     - assets/images/
@@ -106,7 +107,6 @@ mason make auth -o .././lib/features
     - assets/fonts/
     - assets/icons/
     - assets/translations/
-
 ```
 
 ## generate file that contains assets variables and fonts and json: 
