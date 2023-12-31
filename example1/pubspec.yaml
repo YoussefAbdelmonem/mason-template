@@ -35,6 +35,7 @@ dependencies:
   flutter_smart_dialog: ^4.8.2
   responsive_framework: ^1.1.0
   bot_toast: ^4.0.3
+  pinput:
   # url_launcher: ^6.1.11
  
   

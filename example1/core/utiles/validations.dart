@@ -4,26 +4,26 @@ class Validation {
   static RegExp emailReg = RegExp(
       r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
 
-  static String? emailValidation(String? value, {bool isRequired = true}) {
+  String? emailValidation(String? value, {bool isRequired = true}) {
     if (value!.trim().isEmpty) {
       if (isRequired) {
-        return ('Required Email'.tr());
+        return ("البريد الالكتروني مطلوب".tr());
       } else {
         return null;
       }
     } else if (!emailReg.hasMatch(value.trim())) {
-      return ('Invalid Email'.tr());
+      return ("بريد الكتروني غير صالح".tr());
     } else {
       return null;
     }
   }
 
-  static String? validatePassword(String? value) {
+  String? validatePassword(String? value) {
     if (value!.trim().isEmpty) {
-      return 'Password Required'.tr();
+      return 'كلمة المرور مطلوبه'.tr();
     } else {
       if (value.trim().length < 6) {
-        return "Short Password".tr();
+        return "كلمة مرور قصيره".tr();
       } else {
         return null;
       }
@@ -43,19 +43,19 @@ class Validation {
   //   }
   // }
 
-  static String? confirmPasswordValidation(value, String password) {
+  String? confirmPasswordValidation(value, String password) {
     if (value!.isEmpty) {
-      return 'requiredField'.tr(args: ["confirmPassword".tr()]);
+      return 'تاكيد كلمة المرور مطلوبه'.tr(args: ["confirmPassword".tr()]);
     } else if (password != value) {
-      return ('Password Not Match'.tr());
+      return ("كلمة المرور غير متطابقه".tr());
     } else {
       return null;
     }
   }
 
-  static String? defaultValidation(value, [String field = "", String? error]) {
+  String? defaultValidation(value, [String field = "", String? error]) {
     if (value!.isEmpty) {
-      return error ?? ("Required Field".tr(args: [field]));
+      return error ?? ("حقل مطلوب".tr(args: [field]));
     } else {
       return null;
     }

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../data_source/hive_helper.dart';
 import 'Locator.dart';
 import 'validations.dart';
-import '../../../auth/domain/model/auth_model.dart';
 
 class Utils {
 
@@ -16,16 +15,16 @@ class Utils {
       locator<GlobalKey<NavigatorState>>();
   static GlobalKey<NavigatorState> app1Nav = GlobalKey();
   static GlobalKey<NavigatorState> app2Nav = GlobalKey();
+  
   static Validation get valid => locator<Validation>();
   static DataManager get dataManager => locator<DataManager>();
   static GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
- 
- static UserModel userModel = UserModel();
   static saveUserInHive(Map<String, dynamic> response) async {
-    userModel = UserModel.fromJson(response);
-    token = userModel.token ?? '';
-    await Utils.dataManager.saveUser(Map<String, dynamic>.from(response));
+    // userModel = UserModel.fromJson(response);
+    // token = userModel.token ?? '';
+    // await Utils.dataManager.saveUser(Map<String, dynamic>.from(response));
   }
+
 
 
   static void rebuildAllChildren(BuildContext context) {
