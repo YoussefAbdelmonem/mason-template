@@ -27,24 +27,28 @@ add bricks to mason.yaml file so you can access the files that I have share on G
 bricks:
     readme:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-template.git
+        url: https://github.com/YoussefAbdelmonem/mason-templete.git
         path: bricks/readme
     assets:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-template.git
+        url: https://github.com/YoussefAbdelmonem/mason-templete.git
         path: bricks/assets
-    project_template:
+    project_templete:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-template.git
-        path: bricks/project_template
+        url: https://github.com/YoussefAbdelmonem/mason-templete.git
+        path: bricks/project_templete
     feature:
       git:
-        url: https://github.com/YoussefAbdelmonem/mason-template
+        url: https://github.com/YoussefAbdelmonem/mason-templete
         path: bricks/feature
+    auth:
+      git:
+        url: https://github.com/YoussefAbdelmonem/mason-templete
+        path: bricks/auth
 
 ```
+## to get the dependecy that you applied
 ```shell
-
 mason get
 ```
 ## Dependencies
@@ -52,7 +56,6 @@ mason get
 Below is a list of default dependencies used in this project:
 ```yaml
 dependencies:
- cupertino_icons: ^1.0.2
   dio: ^5.2.0
   cached_network_image: ^3.2.3
   shimmer: ^3.0.0
@@ -77,18 +80,22 @@ dependencies:
 ### generate assets folder:
 ```shell
 mason make assets -o ../
+```
+
 
 ## generate project template:
 ```shell
-mason make project_template -o .././lib
+mason make project_templete -o .././lib
 ```
 
 ## add new feature with the name you give:
-- run this command and then enter feature name 
 ```shell
 mason make feature -o .././lib/features
 ```
-
+## add the default authentications and splash:
+```shell
+mason make auth -o .././lib/features
+```
 
 ```
 ## Add assets paths in pubspec.yaml file
@@ -136,4 +143,14 @@ flutter_gen:
 ```
 
 generate assets folder:
+
 dart run build_runner build
+
+mason make assets -o ../
+
+mason make project_templete -o .././lib
+
+mason make auth -o .././lib/features
+
+mason make feature -o .././lib/features
+
