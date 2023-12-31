@@ -83,7 +83,7 @@ mason make assets -o ../
 
 ## generate project template:
 ```shell
-mason make project_templete -o .././lib
+mason make project_template -o .././lib
 ```
 
 ## add new feature with the name you give:
