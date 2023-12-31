@@ -96,6 +96,10 @@ mason make feature -o .././lib/features
 ```shell
 mason make auth -o .././lib/features
 ```
+## add the readme file:
+```shell
+mason make readme -o ../
+```
 
 
 ## Add assets paths in pubspec.yaml file
