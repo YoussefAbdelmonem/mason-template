@@ -15,4 +15,6 @@ bricks:
     path: ./bricks/assets
   feature:
     path: ./bricks/feature
+  auth:
+    path: ./bricks/auth
   

@@ -43,7 +43,10 @@ bricks:
         path: bricks/feature
 
 ```
+```shell
 
+mason get
+```
 ## Dependencies
 
 Below is a list of default dependencies used in this project:
