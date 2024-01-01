@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../cubit/cubit.dart';
-import '../../cubit/states.dart';
+import '../../cubit/{{featureName.snakeCase()}}_cubit.dart';
+import '../../cubit/{{featureName.snakeCase()}}_states.dart';
 ///// put it in routes 
 ///  import '../../modules/{{featureName.snakeCase()}}/presentation/{{featureName.pascalCase()}}.dart';
 /// static const String {{featureName.pascalCase()}}Screen = "{{featureName.pascalCase()}}Screen";
@@ -40,7 +40,7 @@ class _{{featureName.pascalCase()}}ScreenState extends State<{{featureName.pasca
             body: SafeArea(
               child: Column(
                 children: [
-                  Text("${{featureName.pascalCase()}}Screen"),
+                  Text("{{featureName.pascalCase()}}Screen"),
       
                   
                 ],
