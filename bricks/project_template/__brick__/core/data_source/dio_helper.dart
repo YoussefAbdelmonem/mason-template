@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:developer';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import '../Router/Router.dart';
 import '../helper/alerts.dart';
@@ -26,12 +27,14 @@ class DioService {
           connectTimeout: const Duration(milliseconds: 30000),
           receiveTimeout: const Duration(milliseconds: 30000),
           sendTimeout: const Duration(milliseconds: 30000)),
-    )..interceptors.add(
-        LogInterceptor(
-          responseBody: true,
-          requestBody: true,
-        ),
-      );
+    )..interceptors.add(PrettyDioLogger(
+        requestHeader: true,
+        requestBody: true,
+        responseBody: true,
+        responseHeader: false,
+        error: true,
+        compact: true,
+        maxWidth: 90));
   }
 
   Future<ApiResponse> postData({
