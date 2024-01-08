@@ -55,6 +55,7 @@ Below is a list of default dependencies used in this project:
 ```yaml
 dependencies:
   dio: ^5.2.0
+  pretty_dio_logger: ^1.3.1
   cached_network_image: ^3.2.3
   shimmer: ^3.0.0
   flutter_svg: ^2.0.7
