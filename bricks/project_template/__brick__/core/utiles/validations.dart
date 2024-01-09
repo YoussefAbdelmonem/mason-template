@@ -1,8 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
-import '../../core/app_string/app_strings.dart';
+
+import '../app_strings/app_strings.dart';
 
 class Validation {
-  static String? defaultValidation(String? value) {
+   String? defaultValidation(String? value) {
     if (value != null) {
       if (value.isEmpty) {
         return (AppStrings.requiredField.tr());
@@ -34,7 +35,8 @@ class Validation {
 
   static RegExp emailReg = RegExp(
       r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
-  static String? emailValidation(
+
+   String? emailValidation(
     String? value,
   ) {
     if (value!.trim().isEmpty) {
@@ -46,7 +48,7 @@ class Validation {
     }
   }
 
-  static String? passwordValidation(String? value) {
+   String? passwordValidation(String? value) {
     if (value!.trim().isEmpty) {
       return (AppStrings.requiredPassword.tr());
     } else if (value.trim().length < 8) {
@@ -56,7 +58,7 @@ class Validation {
     }
   }
 
-  static String? confirmPasswordValidation(value, String password) {
+   String? confirmPasswordValidation(value, String password) {
     if (value!.isEmpty) {
       return AppStrings.requiredField.tr(args: [AppStrings.confirmPasswordValidation.tr()]);
     } else if (password != value) {

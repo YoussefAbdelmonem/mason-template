@@ -136,7 +136,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             color: AppColors.primary),
                         hintText: 'كلمة المرور',
                         password: true,
-                        validator: (v) => Utils.valid.validatePassword(v),
+                        validator: Utils.valid.passwordValidation,
                         controller: password,
                         borderRadius: 33,
                       ),

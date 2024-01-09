@@ -90,7 +90,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                                 color: AppColors.primary),
                             hintText: 'كلمة المرور الجديدة',
                             password: true,
-                            validator: (v) => Utils.valid.validatePassword(v),
+                            validator:  Utils.valid.passwordValidation,
                             // controller: password,
                             borderRadius: 33,
                           ),

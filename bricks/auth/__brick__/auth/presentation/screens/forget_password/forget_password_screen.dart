@@ -87,7 +87,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                         ),
                         hintText: 'البريد الالكتروني',
                         password: false,
-                        validator: (v) => Utils.valid.emailValidation(v),
+                        validator:  Utils.valid.emailValidation,
                         controller: email,
                         borderRadius: 33,
                       ),
